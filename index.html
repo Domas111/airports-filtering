@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>Foto</title>
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="layout.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="function.js"></script>
+
+</head>
+
+<script type="text/javascript">
+$(function () {	
+var filterList = {
+		
+init: function () {
+
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+   //   		  filter: '.app'  
+      		}     
+				});								
+			
+			}
+
+		};
+		filterList.init();
+	
+		});	
+</script>
+
+
+<body>
+
+	    <div class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">Pasaulio oro uostai</span></li>
+			<li><span class="filter" data-filter=".app">Vokietija</span></li>
+			<li><span class="filter" data-filter=".card">Didžioji Britanija</span></li>
+			<li><span class="filter" data-filter=".icon">Rusijos federacija</span></li>
+			<li><span class="filter" data-filter=".logo">JAV</span></li>
+			<li><span class="filter" data-filter=".web">Australija</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<img src="img/usa/ny.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">New Yorkas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+				<a href="https://www.frankfurt-airport.com/en/travel/transfer.overview.flights.html"><img src="img/ger/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Frankfurtas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+				<a href="https://www.sydneyairport.com.au/"><img src="img/australia/sydney.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sidnėjus</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+	        <a href="https://www.heathrow.com/"><img src="img/eng/london.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Londonas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+						
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+			<a href="https://www.munich-airport.com/"><img src="img/ger/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Miunchenas</a>							
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+            <a href="https://www.liverpoolairport.com/"><img src="img/eng/liverpool.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Liverpulis</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+			<a href="https://www.flymanchester.com/"><img src="img/eng/manchester.jpg" alt="" />
+					<div class="label">
+					<div class="label-text">
+			<a class="text-title">Mančesteris</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/usa/washington.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Vašingtonas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																							
+			
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+		<a href="https://www.berlin-airport.de/en/index.php"><img src="img/ger/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Berlynas</a>							
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>														
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+        <a href="https://www.birminghamairport.co.uk/"><img src="img/eng/birmingham.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Birminghamas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/usa/miamy.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Majamis</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/usa/pheonix.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Fyniksas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>													
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+		<a href="https://www.svo.aero/en/main"><img src="img/rus/moscow.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Maskva</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>							
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+		<a href="https://www.melbourneairport.com.au/"><img src="img/australia/melbourne.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Melburnas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+		<a href="https://pulkovoairport.ru/en/"><img src="img/rus/peterburg.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sankt-Peterburgas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+		<a href="https://www.canberraairport.com.au/flights/"><img src="img/australia/canberra.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Kanbera</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+		<a href="http://vvo.aero/en/"><img src="img/rus/vladivostok.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Vladivostokas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">						
+		<a href="https://www.airportia.com/russia/bolshoye-savino-airport/departures/"><img src="img/rus/perm.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Permė</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+		<a href="https://www.bne.com.au/"><img src="img/australia/Brisbane.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Brisbeinas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>									
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/usa/sanfrancisko.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">San-Franciskas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/usa/los.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Los-Andželis</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																												
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+		    <a href="http://svx.aero/en/"><img src="img/rus/jekaterinburg.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Jeteringurgas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+            <a href="https://www.newcastleairport.com/"><img src="img/eng/newcastle.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">New Castlas</a>							
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/usa/portland.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Portlandas</a>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+												
+		</div>
+		
+	</div>
+
+</body>
+</html>
